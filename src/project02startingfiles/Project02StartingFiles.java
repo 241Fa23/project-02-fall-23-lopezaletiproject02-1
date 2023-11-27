@@ -50,30 +50,43 @@ public class Project02StartingFiles {
         String choice = input.nextLine();
 
         while (choice != "q") {
-            Random rand = new Random();
-            int option = rand.nextInt(1, 4);
-            switch (option) {
-                case 1:
-                    System.out.println("**********************\nNothing here...\n**********************");
-            }
-            switch (option) {
-                case 2:
-                    System.out.println("**********************\nNice trees around here...\n**********************");
-            }
-            switch (option) {
-                case 3:
-                    System.out.println("**********************\nInteresting cottage...\n**********************");
-            }
-            switch (option) {
-                case 4:
-                    System.out.println("**********************\nPotty break...\n**********************");
+            switch (choice) {
+                case "?":
+                    //System.out.println(FUTURE STATUS METHOD);
+                    break;
+                case "n":
 
             }
+
             System.out.println("What  would you like to do?");
             System.out.print("{?}Status Report? || {n}{s}{e}{w} Move 1 Space North, South, East, or West || {q}Quit\n>>");
             choice = input.nextLine();
 
         }
 
+    }
+    //Begin methods here
+
+    //A method that prints out the players status report
+    //A method that generates whether the player has a benign scene or a attack scenario
+    //A method that has the benign scenes in it.
+    public static void BenignScenes() {
+        System.out.println("**********************");
+        Random rand = new Random();
+        int option = rand.nextInt(1, 4);
+        switch (option) {
+            case 1:
+                System.out.println("Nothing here...\n**********************");
+
+            case 2:
+                System.out.println("Nice trees around here...\n**********************");
+
+            case 3:
+                System.out.println("Interesting cottage...\n**********************");
+
+            case 4:
+                System.out.println("Potty break...\n**********************");
+
+        }
     }
 }

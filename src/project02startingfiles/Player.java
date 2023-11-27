@@ -48,11 +48,4 @@ public abstract class Player {
         return health;
     }
 
-    /**
-     * @param health the health to set
-     */
-    public void setHealth(int health) {
-        this.health = health;
-    }
-
 }
