@@ -49,6 +49,7 @@ public class Project02StartingFiles {
         System.out.print("{?}Status Report? || {n}{s}{e}{w} Move 1 Space North, South, East, or West || {q}Quit\n>>");
         String choice = input.nextLine();
 
+        BenignScenes();
         while (choice != "q") {
             switch (choice) {
                 case "?":
@@ -57,11 +58,15 @@ public class Project02StartingFiles {
                 case "n":
 
             }
-
             System.out.println("What  would you like to do?");
             System.out.print("{?}Status Report? || {n}{s}{e}{w} Move 1 Space North, South, East, or West || {q}Quit\n>>");
             choice = input.nextLine();
 
+        }
+        if (choice == "q") {
+            System.out.println("**********************\n**********************\nThe game has come to an end! Your final stats: ");
+            //call player status method
+            System.out.println("Thanks for playing!");
         }
 
     }
@@ -77,15 +82,19 @@ public class Project02StartingFiles {
         switch (option) {
             case 1:
                 System.out.println("Nothing here...\n**********************");
+                break;
 
             case 2:
                 System.out.println("Nice trees around here...\n**********************");
+                break;
 
             case 3:
                 System.out.println("Interesting cottage...\n**********************");
+                break;
 
             case 4:
                 System.out.println("Potty break...\n**********************");
+                break;
 
         }
     }
