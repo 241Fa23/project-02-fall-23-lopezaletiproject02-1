@@ -15,7 +15,11 @@ public class Thief extends Player {
     }
 
     public void useSpecialMove() {
+        System.out.println("Thief Special' move is ' Sneak By' ");
 
     }
-
+    public String toString (){
+        return "Thief"+super.toString();
+    }
+        
 }

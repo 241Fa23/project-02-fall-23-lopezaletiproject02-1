@@ -22,10 +22,28 @@ public abstract class Player {
         this.health = 10;
         this.score = 0;
     }
+    
 
+    
+    
+    
     public abstract String getSpecialMove();
             
 
     public abstract void useSpecialMove();
+
+    /**
+     * @return the score
+     */
+    public int getScore() {
+        return score;
+    }
+
+    /**
+     * @param score the score to set
+     */
+    public void setScore(int score) {
+        this.score = score;
+    }
 
 }

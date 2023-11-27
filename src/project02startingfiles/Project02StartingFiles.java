@@ -72,6 +72,7 @@ public class Project02StartingFiles {
             System.out.println("What  would you like to do?");
             System.out.print("{?}Status Report? || {n}{s}{e}{w} Move 1 Space North, South, East, or West || {q}Quit\n>>");
             choice = input.nextLine();
+            
         }
 
     }
