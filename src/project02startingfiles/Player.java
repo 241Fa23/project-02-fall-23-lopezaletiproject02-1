@@ -13,6 +13,16 @@ public abstract class Player {
     private int health;
     private int score;
 
+    public Player(int health, int score) {
+        this.health = health;
+        this.score = score;
+    }
+
+    public Player() {
+        this.health = 10;
+        this.score = 0;
+    }
+
     public abstract String getSpecialMove();
             
 
