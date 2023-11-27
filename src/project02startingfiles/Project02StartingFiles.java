@@ -20,8 +20,12 @@ public class Project02StartingFiles {
 
         //predefined character health and scores
         Wizard wiz = new Wizard();
-        Knifhg //Import the scanner for user input
-                Scanner input = new Scanner(System.in);
+        Knight kni = new Knight();
+        Healer heal = new Healer();
+        Thief thef = new Thief();
+
+        //Import the scanner for user input
+        Scanner input = new Scanner(System.in);
 
         System.out.println("Welcome to JavaQuest!\nStay alive and increase your score!");
         System.out.print("Choose a character...\n{k}Knight || {h}Healer || {w}Wizard || {t}Thief \n>>");
