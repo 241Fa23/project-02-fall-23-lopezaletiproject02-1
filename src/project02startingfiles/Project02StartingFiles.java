@@ -20,10 +20,26 @@ public class Project02StartingFiles {
         //Import the scanner for user input
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Welcome to JavaQuest!\n Stay alive and increase your score!");
-        System.out.println("Choose a character...\n{k}Knight || {h}Healer || {w}Wizard || {t}Thief"
-                + "\n>>");
+        System.out.println("Welcome to JavaQuest!\nStay alive and increase your score!");
+        System.out.print("Choose a character...\n{k}Knight || {h}Healer || {w}Wizard || {t}Thief \n>>");
         String character = input.nextLine();
-    }
 
+        if (character.equals("k")) {
+            System.out.println("Welcome, Knight!");
+        }
+        if (character.equals("h")) {
+            System.out.println("Welcome, Healer!");
+        }
+        if (character.equals("w")) {
+            System.out.println("Welcome, Wizard!");
+        }
+        if (character.equals("t")) {
+
+            System.out.println("Welcome, Theif!");
+        }
+        System.out.println("What  would you like to do?");
+        System.out.print("{?}Status Report? || {n}{s}{e}{w} Move 1 Space North, South, East, or West || {q}Quit\n>>");
+        String choice = input.nextLine();
+
+    }
 }
