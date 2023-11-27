@@ -22,13 +22,8 @@ public abstract class Player {
         this.health = 10;
         this.score = 0;
     }
-    
 
-    
-    
-    
     public abstract String getSpecialMove();
-            
 
     public abstract void useSpecialMove();
 
@@ -44,6 +39,20 @@ public abstract class Player {
      */
     public void setScore(int score) {
         this.score = score;
+    }
+
+    /**
+     * @return the health
+     */
+    public int getHealth() {
+        return health;
+    }
+
+    /**
+     * @param health the health to set
+     */
+    public void setHealth(int health) {
+        this.health = health;
     }
 
 }
