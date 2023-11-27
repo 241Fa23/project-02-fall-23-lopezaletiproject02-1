@@ -16,7 +16,7 @@ public class Wizard extends Player {
     }
      
     public void useSpecialMove(){
-        System.out.println("wizard uses special moves Cast a Spell");
+        System.out.println("wizard  special's move is ' Cast a Spell '");
     }
     public String toString (){
         return "wizard"+super.toString();

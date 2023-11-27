@@ -14,6 +14,7 @@ public abstract class Player {
     private int score;
 
     public abstract String getSpecialMove();
+            
 
     public abstract void useSpecialMove();
 

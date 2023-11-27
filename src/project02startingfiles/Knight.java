@@ -11,10 +11,14 @@ package project02startingfiles;
 public class Knight extends Player {
     
    public String getSpecialMove(){
-        return "Use Sleeping Powder";
+        return "Use Vitamin Powder";
     }
     public void useSpecialMove(){
+        System.out.println("Knight Special movie is 'Vitamin Powder' ");
       
+    }
+    public String toString (){
+        return "Knight"+super.toString();
     }
     
 }

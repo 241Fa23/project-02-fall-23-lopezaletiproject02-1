@@ -14,7 +14,11 @@ public class Healer extends Player{
         return "Use Sleeping Powder";
     }
     public void useSpecialMove(){
+        System.out.println("Healer special' move is 'sleeping Powder' ");
       
+    }
+    public String toString() {
+        return "Healer"+super.toString();
     }
     
 
