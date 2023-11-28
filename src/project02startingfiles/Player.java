@@ -23,10 +23,6 @@ public abstract class Player {
         this.score = 0;
     }
 
-    public abstract String getSpecialMove();
-
-    public abstract void useSpecialMove();
-
     /**
      * @return the score
      */
@@ -50,4 +46,8 @@ public abstract class Player {
      public String toString() {
         return "Health: " + health + "\nScore: " + score;
 }
+     
+    public abstract String getSpecialMove();
+
+    public abstract void useSpecialMove();
 }
