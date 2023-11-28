@@ -73,6 +73,21 @@ public class Project02StartingFiles {
     //Begin methods here
 
     //A method that prints out the players status report
+    public static void  Playerstatus(String character){
+        if (character.equals("w")){
+          System.out.println("Wizard Status:\nHealth: " + wiz.getHealth() + "\nScore: " + wiz.getScore());  
+        }
+        else if (character.equals("k")){
+          System.out.println("Knight Status:\nHealth: " + kni.getHealth()+"\nScore: " + kni.getScore());
+        }
+        else if(character.equals("h")){
+            System.out.println("Helaer Status:\nHealth: " +heal.getHealth()+"\nScore: " + heal.getScore());
+        }
+        else if (character.equals("t")){
+            System.out.println("Theif Status:\nHealth: "+thef.getHealth()+"\nScore: " +thef.getScore());
+        }
+    }
+ 
     //A method that generates whether the player has a benign scene or a attack scenario
     public static void scearioScene() {
         int typeOfScene = rand.nextInt(5);
