@@ -20,6 +20,11 @@ public class Thief extends Player {
         System.out.println("Thief Special' move is ' Sneak By' ");
 
     }
+
+    /**
+     *
+     * @return
+     */
     @Override
     public String toString (){
         return "Thief"+super.toString();
