@@ -73,21 +73,18 @@ public class Project02StartingFiles {
     //Begin methods here
 
     //A method that prints out the players status report
-    public static void  Playerstatus(String character){
-        if (character.equals("w")){
-          System.out.println("Wizard Status:\nHealth: " + wiz.getHealth() + "\nScore: " + wiz.getScore());  
-        }
-        else if (character.equals("k")){
-          System.out.println("Knight Status:\nHealth: " + kni.getHealth()+"\nScore: " + kni.getScore());
-        }
-        else if(character.equals("h")){
-            System.out.println("Helaer Status:\nHealth: " +heal.getHealth()+"\nScore: " + heal.getScore());
-        }
-        else if (character.equals("t")){
-            System.out.println("Theif Status:\nHealth: "+thef.getHealth()+"\nScore: " +thef.getScore());
+    public static void Playerstatus(String character) {
+        if (character.equals("w")) {
+            System.out.println("Wizard Status:\nHealth: " + wiz.getHealth() + "\nScore: " + wiz.getScore());
+        } else if (character.equals("k")) {
+            System.out.println("Knight Status:\nHealth: " + kni.getHealth() + "\nScore: " + kni.getScore());
+        } else if (character.equals("h")) {
+            System.out.println("Helaer Status:\nHealth: " + heal.getHealth() + "\nScore: " + heal.getScore());
+        } else if (character.equals("t")) {
+            System.out.println("Theif Status:\nHealth: " + thef.getHealth() + "\nScore: " + thef.getScore());
         }
     }
- 
+
     //A method that generates whether the player has a benign scene or a attack scenario
     public static void scearioScene() {
         int typeOfScene = rand.nextInt(5);
@@ -125,7 +122,7 @@ public class Project02StartingFiles {
     }
 
     //Method that has the attack scenarios
-    public static void attackScenario() {
+    public static void attackScenario(String character) {
         String[] foes = {"zombie", "bandit", "lobbyist"};
         String typeOfFoe = foes[rand.nextInt(foes.length)];
         System.out.println("Oh no! You are being attacked by a " + typeOfFoe + "!\nHow would you like to handle this?");
@@ -133,9 +130,21 @@ public class Project02StartingFiles {
         String choice = input.next().toLowerCase();
 
         if (choice.equals("s")) {
-            if () {
-                
+            System.out.println("Prepare for battle!\nPress any letter then ENTER to continue...");
+            input.next();
+            System.out.println("**********************");
+            if (character.equals("w")) {
+                System.out.println("The Wizard casts a spell!");
+                int chance = rand.nextInt(10);
+                if (chance < 7) {
+                    System.out.println("Player wins! Increase score by 2 points!");
+                } else {
+                    System.out.println("Oh no! You've lost 1 health point.");
+                }
+                //INSERT PLAYER STATUS METHOD
+                //BACK TO MAIN MENU
             }
         }
     }
+
 }
