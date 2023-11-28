@@ -11,13 +11,16 @@ package project02startingfiles;
  */
 public class Wizard extends Player {
 
+    @Override
     public String getSpecialMove() {
         return "Cast a Spell";
     }
      
+    @Override
     public void useSpecialMove(){
         System.out.println("wizard  special's move is ' Cast a Spell '");
     }
+    @Override
     public String toString (){
         return "wizard"+super.toString();
 

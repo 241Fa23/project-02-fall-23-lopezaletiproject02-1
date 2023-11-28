@@ -11,10 +11,10 @@ package project02startingfiles;
 public class Knight extends Player {
     
    public String getSpecialMove(){
-        return "Use Vitamin Powder";
+        return "Slash with Sword";
     }
     public void useSpecialMove(){
-        System.out.println("Knight Special movie is 'Vitamin Powder' ");
+        System.out.println("Knight Special movie is 'slashed with your sword' ");
       
     }
     public String toString (){

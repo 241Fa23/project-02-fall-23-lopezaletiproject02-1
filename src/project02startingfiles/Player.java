@@ -47,5 +47,7 @@ public abstract class Player {
     public int getHealth() {
         return health;
     }
-
+     public String toString() {
+        return "Health: " + health + "\nScore: " + score;
+}
 }

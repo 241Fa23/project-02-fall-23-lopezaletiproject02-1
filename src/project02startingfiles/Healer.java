@@ -10,13 +10,16 @@ package project02startingfiles;
  */
 public class Healer extends Player{
     
+    @Override
     public String getSpecialMove(){
         return "Use Sleeping Powder";
     }
+    @Override
     public void useSpecialMove(){
         System.out.println("Healer special' move is 'sleeping Powder' ");
       
     }
+    @Override
     public String toString() {
         return "Healer"+super.toString();
     }
