@@ -9,16 +9,22 @@ package project02startingfiles;
  * @author S561831
  */
 public class Knight extends Player {
-    
-   public String getSpecialMove(){
+
+    public Knight(int health, int score) {
+        super(health, score);
+    }
+
+    public String getSpecialMove() {
         return "Slash with Sword";
     }
-    public void useSpecialMove(){
+
+    public void useSpecialMove() {
         System.out.println("Knight Special movie is 'slashed with your sword' ");
-      
+
     }
-    public String toString (){
-        return "Knight"+super.toString();
+
+    public String toString() {
+        return "Knight" + super.toString();
     }
-    
+
 }

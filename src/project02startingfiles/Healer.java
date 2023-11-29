@@ -8,22 +8,26 @@ package project02startingfiles;
  *
  * @author S561831
  */
-public class Healer extends Player{
-    
+public class Healer extends Player {
+
+    public Healer(int health, int score) {
+        super(health, score);
+    }
+
     @Override
-    public String getSpecialMove(){
+    public String getSpecialMove() {
         return "Use Sleeping Powder";
     }
+
     @Override
-    public void useSpecialMove(){
+    public void useSpecialMove() {
         System.out.println("Healer special' move is 'sleeping Powder' ");
-      
+
     }
+
     @Override
     public String toString() {
-        return "Healer"+super.toString();
+        return "Healer" + super.toString();
     }
-    
 
-    
 }

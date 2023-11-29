@@ -10,6 +10,10 @@ package project02startingfiles;
  */
 public class Thief extends Player {
 
+    public Thief(int health, int score) {
+        super(health, score);
+    }
+
     @Override
     public String getSpecialMove() {
         return "Sneak By";
@@ -20,9 +24,10 @@ public class Thief extends Player {
         System.out.println("Thief Special' move is ' Sneak By' ");
 
     }
+
     @Override
-    public String toString (){
-        return "Thief"+super.toString();
+    public String toString() {
+        return "Thief" + super.toString();
     }
-        
+
 }

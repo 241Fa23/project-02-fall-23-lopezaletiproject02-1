@@ -50,4 +50,11 @@ public abstract class Player {
     public abstract String getSpecialMove();
 
     public abstract void useSpecialMove();
+
+    /**
+     * @param health the health to set
+     */
+    public void setHealth(int health) {
+        this.health = health;
+    }
 }

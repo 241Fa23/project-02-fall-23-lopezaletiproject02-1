@@ -6,23 +6,29 @@ package project02startingfiles;
 
 /**
  *
-<<<<<<< Updated upstream
- * @author s550715
+ * <<<<<<< Updated upstream @author s55071
+ *
+ * 5
  */
 public class Wizard extends Player {
+
+    public Wizard(int health, int score) {
+        super(health, score);
+    }
 
     @Override
     public String getSpecialMove() {
         return "Cast a Spell";
     }
-     
+
     @Override
-    public void useSpecialMove(){
+    public void useSpecialMove() {
         System.out.println("wizard  special's move is ' Cast  Spell '");
     }
-    @Override
-    public String toString (){
-        return "wizard"+super.toString();
 
-}
+    @Override
+    public String toString() {
+        return "wizard" + super.toString();
+
+    }
 }
