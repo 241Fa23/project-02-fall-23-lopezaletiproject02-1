@@ -6,7 +6,7 @@ package project02startingfiles;
 
 /**
  *
- * @author s550715
+ * @author S550715
  */
 public class Thief extends Player {
 
